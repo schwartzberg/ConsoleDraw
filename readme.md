@@ -1,5 +1,3 @@
-xx
-
 For the definition of what this code is supposed to do, pls see:
 RequirementDefinitionForApplication.txt  
 
@@ -14,7 +12,7 @@ At work or for production I would always ask (verify with) the customer first.
 
 Unit Testing:
 There are DrawingCommands.cs for the 4 commands, and the DrawingCommandValidator.cs
-I unit tested DrawingCommandValidator.cs  Õ would likewise do so for the DrawingCommand class, i used though the Console a lot in the DrawingCommand class,
+I unit tested DrawingCommandValidator.cs  √ç would likewise do so for the DrawingCommand class, i used though the Console a lot in the DrawingCommand class,
 and would have to refactor it a lot with IConsoleManager or something like that that I would then inject in the 
 DrawingCommand constructor. But since I did similiar for the DrawingCommandValidator, I hope the
 coverage (at least for this exercise) would suffice with mostly testing the Validator.  
