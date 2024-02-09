@@ -1,3 +1,5 @@
+View this file in raw pls. (see right above this area and click on "raw")
+
 For the definition of what this code is supposed to do, pls see:
 RequirementDefinitionForApplication.txt  
 
