@@ -66,7 +66,7 @@ enter command: R 14 1 18 3
 |     x              |
 ----------------------
 
-enter command: B 10 3 osouthEastCpm
+enter command: B 10 3 <color o> (Go to column 10 and row 3, start filling in the color there and entire closure connected to that point)
 ----------------------
 |oooooooooooooxxxxxoo|
 |xxxxxxooooooox   xoo|
@@ -74,4 +74,4 @@ enter command: B 10 3 osouthEastCpm
 |     xoooooooooooooo|
 ----------------------
 
-enter command: Q
+enter command: Q  (quits program)
