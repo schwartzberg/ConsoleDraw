@@ -2,29 +2,30 @@ View this file in raw pls. (see right above this area and click on "raw")
 
 For the definition of what this code is supposed to do, pls see:
 RequirementDefinitionForApplication.txt  
+ 
+This demo is done in c#.
 
-Concerning the solution:
-It is done in c#.
-
-It more or less solves the requirement. 
-
-I used console color (instead of a character) for bucket paint.
-I hope it is OK.  I first did it with a character, but it was not clear what was going on, when there were many lines and rectangles.
-At work or for production I would always ask (verify with) the customer first.
+I used console color (instead of a character) for bucket paint (to fill in areas). 
 
 Unit Testing:
-There are DrawingCommands.cs for the 4 commands, and the DrawingCommandValidator.cs
+
+DrawingCommands.cs has methods for 4 commands, it uses also the DrawingCommandValidator.cs
+
 I unit tested DrawingCommandValidator.cs  Í would likewise do so for the DrawingCommand class, i used though the Console a lot in the DrawingCommand class,
-and would have to refactor it a lot with IConsoleManager or something like that that I would then inject in the 
-DrawingCommand constructor. But since I did similiar for the DrawingCommandValidator, I hope the
-coverage (at least for this exercise) would suffice with mostly testing the Validator.  
+and would have to refactor it a lot with IConsoleManager or something like that, that I would then inject in the 
+DrawingCommand constructor, in order to more easily test the  DrawingCommands.cs with unit testing . 
+
+I hope the coverage (at least for this exercise) would suffice with mostly testing the Validator. 
+At least for the time being.
+
 If it was production code I would of course unit test completely these two classes.
 
-There are special cases:
+There are special cases for this application, let me write something about them:
 
-- Resizing the screen?  The commands might work a bit.  It is buggy and not supported.  
-- The application probably works best on Windows.
-- Bucket Paint works on all areas that are not completely closed.  
+- Resizing the screen?  It works but it is not bug free, and is more a UI feature.   So it is not in scope.  The commands might work a bit when resizing but it is not guaranteed.
+- 
+- The application can work on Linux but probably works best on Windows.
+- Here are some examples of how this application works.
 
     For command    B 1 1 Green    - it will not paint area 2, color Green
     ----------------------
