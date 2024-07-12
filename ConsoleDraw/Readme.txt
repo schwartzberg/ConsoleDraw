@@ -24,7 +24,7 @@ There are special cases:
 - The application probably works best on Windows.
 - Bucket Paint works on all areas that are not completely closed.  
 
-    For command    B 1 1 Green    - it will not paint area 2, color Green
+    For command    B 16 2 Green    - it will not paint area 2, color Green
     ----------------------
     |             xxxxx  |
     |xxxxxx       x 2 x  |
@@ -32,7 +32,7 @@ There are special cases:
     |     x              |
     ----------------------
      
-    For command    B 1 1 Green    - it will paint area 2, color Green (because it is not completely closed, a diagonal leads to the area)
+    For command    B 16 2 Green    - it will paint area 2, color Green (because it is not completely closed, a diagonal leads to the area)
     ----------------------
     |             xxxxx  |
     |xxxxxx       x 2 x  |
