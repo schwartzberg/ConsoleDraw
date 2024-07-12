@@ -1,5 +1,3 @@
-﻿Dear Future Employer,
-
 For the definition of what this code is supposed to do, pls see:
 RequirementDefinitionForApplication.txt (in same project as this file).
 
